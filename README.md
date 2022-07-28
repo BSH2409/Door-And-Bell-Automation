@@ -22,7 +22,6 @@
 ## Problem Statement
 
 <div align="center" id="about-the-project">
-<img src="static/_main.png" alt="main">
  </div>
 As sometimes we forget our keys at home or it’s too much handful to carry keys while traveling, our project enables the user to operate the electric/ normal door through a third-party application (Blynk).
 Another application could be if some guest or any known might come without any notice and we are not at home, rather than rushing to home to open the gate one can simply use the Blynk app to open the gate.
