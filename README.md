@@ -1,253 +1,123 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/BSH2409/R-B_Tree">
+    <img src="https://user-images.githubusercontent.com/79904688/181488041-23f6174a-4ca0-4c2c-b6a3-553229dd8e73.jpg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+<h3 align="center">Door and Bell Automation Using Blynk</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/BSH2409/Door-And-Bell-Automation"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/BSH2409/Door-And-Bell-Automation">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/BSH2409/Door-And-Bell-Automation/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/BSH2409/Door-And-Bell-Automation/issues">Request Feature</a>
   </p>
 </div>
 
+## Problem Statement
+
+<div align="center" id="about-the-project">
+<img src="static/_main.png" alt="main">
+ </div>
+As sometimes we forget our keys at home or it’s too much handful to carry keys while traveling, our project enables the user to operate the electric/ normal door through a third-party application (Blynk).
+Another application could be if some guest or any known might come without any notice and we are not at home, rather than rushing to home to open the gate one can simply use the Blynk app to open the gate.
+The Project also provides an option to ring the house bell in the case of alerting someone inside the house from a far distance or just for general purposes.
+Apart from this if one want to collect the record of the time when the door was unlocked. Hence, we implemented our prototype with a feature to upload the current time to a MySQL database when unlocked.
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+### Requirements
+* 4-channel relay module
+*	NodeMCU
+*	Arduino IDE
+*	Jumper cables
+*	Passive Buzzer
+*	2 LED (red and blue)
+*	Power Supply
+*	Blynk Application
+*	Mobile phone with internet connectivity
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+### Test Bed
+* Arduino IDE
+<p align="right">(<a href="#top">↑</a>)</p>
 
 
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
-
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+In order to compile the following project ,the basic requirement is an Arduino IDE and the hardware components mentioned above.
+For smooth installation of NODEMCU board refer to the given [link](https://www.youtube.com/watch?v=OC9wYhv6juM)
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Voilà, All Set.
 
-### Installation
+<p align="right">(<a href="#top">↑</a>)</p>
+<div align="center">
+  
+## Block Diagram of the Project
+  
+![image](https://user-images.githubusercontent.com/79904688/181489201-5213e20e-888d-463c-a40b-1a3c14c5f349.png)
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+## Circuit Diagram
+![image](https://user-images.githubusercontent.com/79904688/181489286-fe9eb719-0611-43cd-bdc7-fc8a0e1c81d1.png)
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+## IRL Prototype Snapshot
+![image](https://user-images.githubusercontent.com/79904688/181489412-3ea6b6fc-1e8d-4db5-8300-cd9559a82d94.png)
+  
+</div>
+## Working of the Prototype
+We are using only two channels (channel 1 and channel 2) for our project.
+Channel 1 is used for operating our electric buzzer as shown in the below image and the relay is connected in parallel so that it doesn’t interfere with the original working of the buzzer switch.
+<div align="center">
+  
+ ![image](https://user-images.githubusercontent.com/79904688/181489562-af1647f8-f209-4454-8cc8-dfe9730d89d0.png)
+  
+</div>
+Channel 2 is used for operating our electric door lock it has been connected to the door receiver via wires and then soldered to maintain a good connection as shown in the image.
+  <div align="center">
+  
+ ![image](https://user-images.githubusercontent.com/79904688/181489576-a0f3abeb-8bca-4ff4-8087-eb54a34112be.png)
+  
+</div>
+We have also added  Blue and Green LEDs in the circuit. green led glows when the lock is opened and the blue one glows when the circuit is connected with WIFI.  
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Node MCU and Blynk Connectivity
+To connect our NodeMCU with Blynk Server, we have to create a project in Blynk mobile application and gather the authentication token. Then use Arduino IDE to create a sketch and upload it into the NodeMCU. The code of the project is provided in the appendix.
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Challenges on Implementation
+1.	When we power up our setup, by default the relay module stays closed and had to be reset to prevent false ringing of the buzzer and false opening of the gate, as this might result in an automatic door opening when we have a power cut and then power comes back.
+<div align="center">
+  
+![image](https://user-images.githubusercontent.com/79904688/181489826-8cd7033f-a66e-447e-88dc-040c8fd666bd.png)
+  
+</div>
+Solution- The data pins connected to the relay channel input IN1 and IN2 must be reset to HIGH to prevent a closed circuit on the power back.
+2.	To prevent rusting and damage from moisture to our modules, the following is fixed into a box that prevents accidental removal of jumper wire as well as provides a rigid structure to our setup
 
 
+## Result
 
-<!-- CONTRIBUTING -->
-## Contributing
+<div align="center">
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+  ### Off State
+![image](https://user-images.githubusercontent.com/79904688/181489991-b8ee4762-0f93-4fac-914c-69246491c0bb.png)
+  ### On State
+  ![image](https://user-images.githubusercontent.com/79904688/181490024-3127e688-7c86-44a3-836c-4dc39a56b55a.png)
+  ### MySQL DataBase
+  ![image](https://user-images.githubusercontent.com/79904688/181490098-43b01c84-a3d5-4b47-8cc4-5248621ddfd0.png)
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+</div>
+<p align="right">(<a href="#top">↑</a>)</p>
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Bhartik Harchand - [Instagram](https://www.instagram.com/_._bsh_._/) - bsh.bhartik@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/BSH2409/Door-And-Bell-Automation](https://github.com/BSH2409/Door-And-Bell-Automation)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
